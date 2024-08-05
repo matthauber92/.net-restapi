@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen();
 // Add DbContext configuration
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 var serverVersion = new MySqlServerVersion(new Version(8, 0, 0));
-builder.Services.AddDbContext<TodoDbContext>(options =>
+builder.Services.AddDbContext<ApiDbContext>(options =>
 {
     options.UseMySql(connectionString, serverVersion);
 });

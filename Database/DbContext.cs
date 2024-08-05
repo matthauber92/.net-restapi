@@ -2,9 +2,9 @@
 
 namespace ToDo.RestApi.Database
 {
-    public class TodoDbContext : DbContext
+    public class ApiDbContext : DbContext
     {
-        public TodoDbContext(DbContextOptions<TodoDbContext> options) : base(options)
+        public ApiDbContext(DbContextOptions<ApiDbContext> options) : base(options)
         {
         }
         

@@ -6,9 +6,9 @@ namespace ToDo.RestApi.Services;
 
 public class UserService : IUserService
 {
-    private readonly TodoDbContext _context;
+    private readonly ApiDbContext _context;
 
-    public UserService(TodoDbContext context)
+    public UserService(ApiDbContext context)
     {
         _context = context;
     }

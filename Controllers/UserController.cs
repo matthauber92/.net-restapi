@@ -5,7 +5,7 @@ namespace ToDo.RestApi.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class UserController : ControllerBase
+public class UserController : Controller
 {
     private readonly IUserService _userService;
 
@@ -15,6 +15,7 @@ public class UserController : ControllerBase
     }
     
     [HttpGet]
+    [Route("/GetAllUsers")]
     public async Task<ActionResult<List<User>>> GetAllUsers()
     {
         try
